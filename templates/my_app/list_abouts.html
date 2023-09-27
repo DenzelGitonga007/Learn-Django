@@ -6,6 +6,33 @@
     <title>List Abouts</title>
 </head>
 <body>
-    
+    <!-- Table to list abouts -->
+    <h4>List of all abouts</h4>
+    <table>
+        <thead>
+            <th>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>Actions</td>
+            </th>
+        </thead>
+        <tbody>
+            {% for about in abouts %}
+            <tr>
+                <td>{{ about.name }}</td>
+                <td>{{ about.phone }}</td>
+                <td>{{ about.email }}</td>
+                <td>
+                    <a href="" class="btn">View</a>
+                    <a href="" class="btn">Update</a>
+                    <a href="" class="btn">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    <!-- End of table -->
 </body>
 </html>
