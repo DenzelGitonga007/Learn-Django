@@ -24,7 +24,7 @@
                 <td>{{ about.phone }}</td>
                 <td>{{ about.email }}</td>
                 <td>
-                    <a href="" class="btn">View</a>
+                    <a href="{% url 'my_app:item_details' about.id %}" class="btn">View</a>
                     <a href="" class="btn">Update</a>
                     <a href="" class="btn">Delete</a>
                 </td>
