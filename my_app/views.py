@@ -10,8 +10,8 @@ from .models import About
     D - Delete
 """
 
-# Read
-def read(request):
+# List
+def list(request):
     # Get all abouts in the db
     abouts = About.objects.all()
     context = { 'abouts': abouts } # Map each about to a key, as a key-value pair dictionary
