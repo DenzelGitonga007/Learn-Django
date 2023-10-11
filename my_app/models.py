@@ -8,5 +8,5 @@ class About(models.Model):
 
     """ Stingify the fields name """
     def __str__(self):
-        return self.name
+        return "{} {} {}".format(self.name, self.phone, self.email)
 
