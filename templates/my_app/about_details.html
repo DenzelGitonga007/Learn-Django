@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Item Details</title>
+    <title>About Details</title>
 </head>
 <body>
-    <h4>Item {{ item.id }} details</h4>
-    <p>Name: {{ item.name }}</p>
-    <p>Email: {{ item.email }}</p>
-    <p>Phone: {{ item.phone }}</p>
+    <h4>About {{ about.name }}</h4>
+    <p>Name: {{ about.name }}</p>
+    <p>Email: {{ about.email }}</p>
+    <p>Phone: {{ about.phone }}</p>
     <p>
         <b>Back to Item List? Click
             <em><a href="{% url 'my_app:list_abouts' %}">Here</a></em>

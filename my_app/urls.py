@@ -6,5 +6,6 @@ app_name = 'my_app'
 
 urlpatterns = [
     path('list/', views.list, name="list_abouts"), # list all items
-    path('item/<int:item_id>/details', views.read, name="item_details"), # view item details
+    path('about/<int:item_id>/details', views.read, name="about_details"), # view item details
+    path('about/create', views.create, name="create_about")
 ]

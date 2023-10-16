@@ -8,6 +8,12 @@
 <body>
     <!-- Table to list abouts -->
     <h4>List of all abouts</h4>
+
+    <h3 style="text-align: right;">
+        Create About
+        <a href="{% url 'my_app:create_about' %}">Here</a>
+    </h3>
+    
     <table>
         <thead>
             <th>
@@ -24,7 +30,7 @@
                 <td>{{ about.phone }}</td>
                 <td>{{ about.email }}</td>
                 <td>
-                    <a href="{% url 'my_app:item_details' about.id %}" class="btn">View</a>
+                    <a href="{% url 'my_app:about_details' about.id %}" class="btn">View</a>
                     <a href="" class="btn">Update</a>
                     <a href="" class="btn">Delete</a>
                 </td>
