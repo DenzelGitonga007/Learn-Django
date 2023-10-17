@@ -9,4 +9,5 @@ urlpatterns = [
     path('about/<int:about_id>/details', views.read, name="about_details"), # view item details
     path('about/create', views.create, name="create_about"), # create the about
     path('update/<int:about_id>/details', views.update, name="update_about"), # update about
+    path('delete/<int:about_id>/details', views.delete, name="delete_about"), # delete about
 ]

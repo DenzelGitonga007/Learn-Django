@@ -56,4 +56,16 @@ def update(request, about_id):
     return render(request, 'my_app/update_about.html', context)
 
 
+# Delete
+def delete(request, about_id):
+    about = get_object_or_404(About, pk=about_id)
+    if request.method == 'POST':
+        about.delete()
+        return redirect('my_app:list_abouts')
+    context = {
+        'about': about
+    }
+    return render(request, 'my_app/delete_about.html', context)
+
+
 # Continue from here

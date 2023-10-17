@@ -32,7 +32,7 @@
                 <td>
                     <a href="{% url 'my_app:about_details' about.id %}" class="btn">View</a>
                     <a href="{% url 'my_app:update_about' about.id %}" class="btn">Update</a>
-                    <a href="" class="btn">Delete</a>
+                    <a href="{% url 'my_app:delete_about' about.id %}" class="btn">Delete</a>
                 </td>
             </tr>
             {% endfor %}
