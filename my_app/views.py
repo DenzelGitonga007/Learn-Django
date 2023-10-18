@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 # Import views
 from .models import About
+from django.contrib.auth.decorators import login_required
 # Import the form(s)
 from .forms import CreateAboutForm, UpdateAboutForm
 # Create your views here.
@@ -21,6 +22,7 @@ def list(request):
 
 
 # Create
+@login_required(login_url='accounts:login')
 def create(request):
     if request.method == 'POST':
         form = CreateAboutForm(request.POST)
