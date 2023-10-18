@@ -9,11 +9,21 @@
     <!-- Table to list abouts -->
     <h4>List of all abouts</h4>
 
-    <h3 style="text-align: right;">
-        Create About
-        <a href="{% url 'my_app:create_about' %}">Here</a>
+    <h3 style="text-align: center;">
+        <a href="{% url 'my_app:create_about' %}">
+            Create About
+        </a>
     </h3>
-    
+
+    <h3 style="text-align: right;">
+        <a href="{% url 'accounts:register' %}">
+            Register | 
+        </a>
+
+        <a href="">
+            Logout
+        </a>
+    </h3>
     <table>
         <thead>
             <th>
